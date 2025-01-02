@@ -10,7 +10,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip"
+} from "@/components"
 import { LazyImage } from '@/components/lazy-image'
 
 const packages = [
@@ -99,7 +99,7 @@ const faqs = [
 
 export default function PackagesPage() {
   return (
-    <TooltipProvider>
+    <TooltipProvider value="tooltip-provider">
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8 text-center font-playfair">Explore Our All-Inclusive Packages</h1>
         <p className="text-lg mb-12 text-center font-opensans max-w-3xl mx-auto">
@@ -123,7 +123,7 @@ export default function PackagesPage() {
                   {pkg.icon}
                   <span>{pkg.name}</span>
                 </CardTitle>
-                <Tooltip>
+                <Tooltip type="single" value={`tooltip-${index}`}>
                   <TooltipTrigger asChild>
                     <CardDescription className="cursor-help">{pkg.description}</CardDescription>
                   </TooltipTrigger>

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Heart, Utensils, SpadeIcon as Spa, Sunset, Wine, Umbrella, Sailboat, SpaceIcon as Yoga, CookingPot } from 'lucide-react'
+import { Heart, Utensils, SpadeIcon as Spa, Sunset, Wine, Umbrella, Sailboat, SpaceIcon as Yoga} from 'lucide-react'
 
 const romanticSettings = [
   {
@@ -58,7 +58,7 @@ const coupleTestimonials = [
   {
     title: "Cooking Class",
     description: "Learn to prepare delicious Turkish cuisine together.",
-    icon: <CookingPot className="h-6 w-6 text-primary" />
+    icon: <Utensils className="h-6 w-6 text-primary" />
   },
   {
     quote: "The romantic dinner under the stars and the sunset cruise made our anniversary unforgettable. IVY Sailing Resort truly knows how to create magical moments for couples.",
@@ -165,7 +165,7 @@ export default function CouplesPage() {
                 <span>Sunset cruise along the beautiful Turkish coast</span>
               </li>
               <li className="flex items-center gap-2">
-                <CookingPot className="h-5 w-5 text-primary" />
+                <Utensils className="h-5 w-5 text-primary" />
                 <span>Couples' cooking class or wine tasting session</span>
               </li>
             </ul>

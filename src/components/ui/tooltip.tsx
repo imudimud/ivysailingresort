@@ -57,5 +57,11 @@ const AccordionContent = React.forwardRef<
 ))
 AccordionContent.displayName = AccordionPrimitive.Content.displayName
 
-export { Accordion, AccordionItem, AccordionTrigger, AccordionContent }
+// Replace Tooltip components with Accordion components
+const Tooltip = Accordion
+const TooltipContent = AccordionContent
+const TooltipProvider = AccordionItem
+const TooltipTrigger = AccordionTrigger
+
+export { Accordion, AccordionItem, AccordionTrigger, AccordionContent, Tooltip, TooltipContent, TooltipProvider, TooltipTrigger }
 

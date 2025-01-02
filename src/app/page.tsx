@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Utensils, Sailboat, Waves, Users, CreditCard, Heart, Star, Umbrella, SpadeIcon as Spa } from 'lucide-react'
-import { FlyingDatePicker } from '@components/flying-date-picker'
+import { FlyingDatePicker } from "@/components"
 import { LazyImage } from '@/components/lazy-image'
 
 export default function Home() {
